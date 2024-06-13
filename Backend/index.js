@@ -15,7 +15,7 @@ const __dirname = path.resolve();
 
 app.use("/todo",todoRoutes)
 
-app.use(express.static(path.join(__dirname, "/Client/dist")));
+app.use(express.static(path.join(__dirname, "/Client/todo/dist")));
 
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "Client", "dist", "index.html"));
