@@ -31,5 +31,34 @@ export const getTodo = async(req,res) =>{
     }
     catch(err){
         console.log(err)
+        res.status(500).json({message:"failed to fetch todo",error:err})
     }   
+}
+
+export const deleteTodo = async(req,res) =>{
+    const {id} = req.params;
+    try{
+        const todo = await Todo.findByIdAndDelete(id);
+        if(!todo){
+            return res.status(404).json({message:"No todo found"})
+        }
+        res.status(200).json({message:"Todo deleted successfully",data:todo})
+    }
+    catch(err){
+        res.status(500).json({message:"failed to delete todo",error:err})
+    }
+}
+
+export const updateTodo = async(req,res) =>{
+    const {id} = req.params;
+    try{
+        const todo = await Todo.findByIdAndUpdate(id,req.body,{new:true});
+        if(!todo){
+            return res.status(404).json({message:"No todo found"})
+        }
+        res.status(200).json({message:"Todo updated successfully",data:todo})
+    }
+    catch(err){
+        res.status(500).json({message:"failed to update todo",error:err})
+    }
 }
