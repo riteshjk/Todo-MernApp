@@ -1,17 +1,25 @@
 import express from 'express';
 import connectDB from './config/db.js';
 import todoRoutes from './routes/todo.routes.js';
-import cors from "cors"
+import cors from "cors";
+import path from "path";
 
 
 const app = express();
 
 app.use(express.json());
 app.use(cors())
+
+const __dirname = path.resolve();
+
+
 app.use("/todo",todoRoutes)
 
+app.use(express.static(path.join(__dirname, "/Client/dist")));
 
-
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "Client", "dist", "index.html"));
+})
 
 app.listen(3000, async()=>{
     try{
