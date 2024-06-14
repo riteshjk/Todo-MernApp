@@ -25,19 +25,16 @@ In This excercise I solved some DSA problem with basic and optimised solution an
     2. First box should occupy a fixed width of 100px, and should be left aligned
     <div class="left fixed box"></div> (line no 2)
     3. Last box hould occupy a fixed width of 100px, and should be right aligned
-    <div class="right fixed box"></div> (line no 2)
+    <div class="right fixed box"></div> (line no 2)a
     4. The container can change widths, so the middle box should expand to the remaining
     available width between the left box and right box.
     5. The contents in the 3 boxes should not overlap
 
-![Screenshot 2024-06-14 081558](https://github.com/riteshjk/Todo-MernApp/assets/96072567/4a1f5a59-f2f3-4331-8254-4d2ef8154640)
+![Screenshot 2024-06-14 100321](https://github.com/riteshjk/Todo-MernApp/assets/96072567/ecde10ff-7fc8-408a-b02a-a40bec0b11e2)
 
+I need to take care that content inside the boxes should not overlap
 
-![Screenshot 2024-06-14 081614](https://github.com/riteshjk/Todo-MernApp/assets/96072567/843b1df5-b868-4199-8824-d2bce3577b70)
-
-
-
-
+![Screenshot 2024-06-14 100342](https://github.com/riteshjk/Todo-MernApp/assets/96072567/fc367f07-fa36-435a-9e62-0193a2b240b9)
 
 
 

@@ -39,28 +39,31 @@ Solution:
 
     Elements selected: Lines 2, 6, 10
     Explanation: This selector selects all elements with the class "box" and there are 3 <div> Present which has class "box" so it target those three <div>.
-    Other lines not selected: Lines 4 and 5 contain elements with different classes ("box-2" and no class), so they are not selected.
+    but lines 4 and 5 contain elements with different classes ("box-2" and no class), so they are not selected so the conslusion is (.) operator will talk to the
+    class and wherever we use .box so we have to target that perticular class only thats why line number 2,6 and 10 will get targeted.
 
 
 2 -  div .box
 
     Elements selected: Lines 2, 6
-    Explanation: This selector selects all elements with the class "box" that are descendants of a <div> element.
+    Explanation: This selector selects all elements with the class "box" that are descendants of a <div> element descendants means the elements that are nested within other elements.
+    and in given problem line number 2 and 6 and nested <div> fo parent div with class box thsts why it target those 2 lines.
     Other lines not selected: Line 10 is not a descendant of any <div> element, and Line 4 is a sibling of the <div> elements, not a descendant.
 
 
 3 -  div.box
 
     Elements selected: Line 2,6,10
-    Explanation: This selector selects the <div> element with the class "box".
+    Explanation: This selector selects the <div> element with the class "box" here we expect the div with class box not and child <div> or parent <div>.
     Other lines not selected: Line 4 is not selected because they don't have the "box" class in one element.
 
 
 4 -  [class]
 
     Elements selected: Lines 2, 4, 6, 10
-    Explanation: This selector selects all elements that have a class attribute.
-    Other lines not selected: Line 8 doesn't have a class attribute.
+    Explanation: This selector selects all elements that have a class attribute and in given problem total 4 classes present to it directly target those 4 lines,
+    when we want to target all the classes at same time we can do this.
+    Other lines not selected: Line 5 doesn't have a class attribute so this div wont get targeted other than this wherever class is present that perticular line will get targeted.
 
 
 5 -  #container .box

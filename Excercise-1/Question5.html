@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-    .box {
-        height: 100px;
-        border: 1px solid black; 
-    }
+      .box {
+        height: 500px;
+        border: 1px solid black;
+      }
 
-    #container {
+      #container {
         display: flex;
-    }
+      }
 
-    .left {
+      .left {
         width: 100px;
-    }
+      }
 
-    .right {
+      .right {
         width: 100px;
-        margin-left: auto; 
-    }
+        margin-left: auto;
+      }
 
-    .middle {
-        flex-grow: 1; 
-    }
+      .middle {
+        flex-grow: 1;
+      }
 
-    
-    /*
+      /*
     This is the one more approach we can use here 
     
     .box {
@@ -48,15 +47,38 @@
     .middle {
         flex-grow: 1; 
     } */
-
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div class="left fixed box"></div>
-        <div class="middle expanding box"></div>
-        <div class="right fixed box"></div>
+      <div class="left fixed box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptates
+        molestiae, enim sint culpa esse labore magni expedita nostrum officia.
+        Eius voluptates, quod aut architecto eligendi dolores odit? Voluptas,
+        placeat!
+      </div>
+      <div class="middle expanding box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        animi nisi iste quisquam autem, illo eaque dolores laudantium numquam
+        pariatur ipsum ratione, velit aperiam amet praesentium esse. Adipisci,
+        facere fuga!
+      </div>
+      <div class="right fixed box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+        perspiciatis expedita omnis quibusdam placeat eius animi quos odit
+        eligendi voluptatibus repellat nobis, et temporibus a nam natus
+        laboriosam saepe hic!
+      </div>
     </div>
-</body>
+  </body>
 </html>
+
+<!-- Explanation: In this question my main target is the content which I have inside the box which cannot overlap to the other boxes,
+for that I have given same height for every boxes and given same width for first and last boxes and remaining width between two boxes for the middle box,
+now for the parent I give flex propertly so I can see all the boxes in horizontal direction
+This CSS block sets the width of the right box to 100 pixels. Additionally, it uses `margin-left: auto` to push this box to the right edge of the container, effectively right-aligning it.
+After that I have given `flex-grow: 1`  instructs the middle box to grow and occupy the remaining available space in the container.
+Since the left and right boxes have fixed widths, the middle box will expand to fill the space between them.
+Overall, this CSS ensures that the three boxes inside the container are placed horizontally, with the left box occupying a fixed width and left-aligned,
+ the right box occupying a fixed width and right-aligned, and the middle box expanding to fill the remaining space between them. Additionally,
+  the common styling ensures that the contents in the boxes do not overlap. -->
