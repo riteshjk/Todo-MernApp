@@ -12,8 +12,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/todos" element={<TodoList />} />
-      <Route path="/tododetails/:id" element={<TodoDetails />} />
-    </Routes>
+      <Route path="/tododetails" element={<TodoDetails />} />
+          </Routes>
   </BrowserRouter>
   )
 }

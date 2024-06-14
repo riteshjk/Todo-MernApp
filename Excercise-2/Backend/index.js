@@ -15,10 +15,10 @@ const __dirname = path.resolve();
 
 app.use("/todo",todoRoutes)
 
-app.use(express.static(path.join(__dirname, "/Client/todo/dist")));
+app.use(express.static(path.join(__dirname, "Excercise-2/Client/todo/dist")));
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "Client", "todo", "dist", "index.html"));
+    res.sendFile(path.join(__dirname, "Excercise-2", "Client", "todo", "dist", "index.html"));
 })
 
 app.listen(3000, async()=>{

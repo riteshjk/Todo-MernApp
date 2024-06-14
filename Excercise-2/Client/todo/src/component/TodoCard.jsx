@@ -79,7 +79,7 @@ const TodoCard = ({ todos, getAllTodos }) => {
 
     const handleClick = () =>{
 
-        navigate(`/tododetails/${todos._id}`)
+        navigate(`/tododetails?id=${todos._id}`);
         
     }
     

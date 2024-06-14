@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Backend/index.js",
+    "start": "node Excercise-2/Backend/index.js",
     "dev": "nodemon Excercise-2/Backend/index.js",
-    "build": "npm install && npm install --prefix Client/todo && npm run build --prefix Client/todo"
+    "build": "npm install && npm install --prefix Excercise-2/Client/todo && npm run build --prefix Excercise-2/Client/todo"
   },
   "keywords": [],
   "author": "",

@@ -1,13 +1,16 @@
-import { useParams } from 'react-router-dom';
+
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 const TodoDetails = () => {
-    const { id } = useParams();
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get('id');
     const [todo, setTodo] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
+
 
     useEffect(() => {
         const fetchTodoById = async () => {
