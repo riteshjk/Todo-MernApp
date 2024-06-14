@@ -1,3 +1,30 @@
+# Excercise - 1
+
+  # Question - 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Todo-MernApp
 
 Welcome to the MERN Todo application! This is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to manage their todos efficiently with features such as adding, editing, deleting, and marking tasks as completed. Additionally, users can view detailed information about each task.
@@ -44,6 +71,18 @@ To run this application locally, follow these steps:
 5. Start the frontend development server:
     cd Client
     npm run dev
+
+# I have provided all the API endpoint for your reference
+
+   #  My backend server running on this port  - https://localhost/3000
+
+   1. For posting the Data -  /todo/addtodo
+
+   2. For get the Data - /todo/gettodo
+
+   3. For delete the data - todo/deletetodo/:id
+
+   4. For Update the data - todo/updatetodo/:id
 
 # Here is the Deployment Link of my application 
 

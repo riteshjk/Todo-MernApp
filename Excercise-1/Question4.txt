@@ -1,0 +1,77 @@
+Question 4:
+Consider the following HTML 
+1.  <div id="container">
+2.       <div class="box"></div>
+3.
+4.      <div class="box-2"></div>
+5.        <div>
+6.         <div class="box"></div>
+7.       </div>
+8.    </div>
+9.
+10.   <div class="box"></div>
+ 
+for each of the following selectors, write the line numbers of the elements that will be selected
+
+.box
+
+div .box
+
+div.box
+
+[class]
+
+#container .box
+
+#container > .box
+
+Write the following for each selector
+- Elements that will be selected (tell us line numbers).
+- Explain why it will select those lines.
+- Explain why it won't select other lines
+
+
+***********************************************************************************************************************************************
+
+Solution:
+
+1 -  .box
+
+    Elements selected: Lines 2, 6, 10
+    Explanation: This selector selects all elements with the class "box" and there are 3 <div> Present which has class "box" so it target those three <div>.
+    Other lines not selected: Lines 4 and 5 contain elements with different classes ("box-2" and no class), so they are not selected.
+
+
+2 -  div .box
+
+    Elements selected: Lines 2, 6
+    Explanation: This selector selects all elements with the class "box" that are descendants of a <div> element.
+    Other lines not selected: Line 10 is not a descendant of any <div> element, and Line 4 is a sibling of the <div> elements, not a descendant.
+
+
+3 -  div.box
+
+    Elements selected: Line 2,6,10
+    Explanation: This selector selects the <div> element with the class "box".
+    Other lines not selected: Line 4 is not selected because they don't have the "box" class in one element.
+
+
+4 -  [class]
+
+    Elements selected: Lines 2, 4, 6, 10
+    Explanation: This selector selects all elements that have a class attribute.
+    Other lines not selected: Line 8 doesn't have a class attribute.
+
+
+5 -  #container .box
+
+    Elements selected: Lines 2, 6
+    Explanation: This selector selects all elements with the class "box" that are descendants of an element with the id "container".
+    Other lines not selected: Lines 4 and 10 are not descendants of the element with the id "container".
+
+
+6 -  #container > .box
+
+    Elements selected: Line 2
+    Explanation: This selector selects the element with the class "box" that is a direct child of an element with the id "container".
+    Other lines not selected: Line 6 is not a direct child of the element with the id "container".

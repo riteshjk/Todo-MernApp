@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Backend/index.js",
-    "dev": "nodemon Backend/index.js",
+    "dev": "nodemon Excercise-2/Backend/index.js",
     "build": "npm install && npm install --prefix Client/todo && npm run build --prefix Client/todo"
   },
   "keywords": [],

@@ -34,9 +34,9 @@ const Home = () => {
 
   return (
     <div>
-      <p>Todo</p>
-      <AddTodo onChange = {handleChnage} todoData={todoData} handleSubmit={handleSubmit}/>
-      {/* <TodoCard/> */}
+ <h1 className="text-3xl font-bold underline text-center mb-8 mt-8">Todo</h1>
+       <AddTodo onChange = {handleChnage} todoData={todoData} handleSubmit={handleSubmit}/>
+      
     </div>
   )
 }

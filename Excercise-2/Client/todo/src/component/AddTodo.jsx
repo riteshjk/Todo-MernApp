@@ -16,7 +16,7 @@ const AddTodo = ({ onChange, todoData, handleSubmit }) => {
       <form className="w-1/2 bg-white rounded shadow-lg p-6 mb-8" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Add Todo"
+          placeholder="Add Title"
           name="title"
           value={todoData?.title}
           onChange={handleChange}
