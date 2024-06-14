@@ -2,7 +2,7 @@ import express from 'express';
 import connectDB from './config/db.js';
 import todoRoutes from './routes/todo.routes.js';
 import cors from "cors";
-import path from "path";
+// import path from "path";
 
 
 const app = express();
@@ -10,16 +10,16 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 
 app.use("/todo",todoRoutes)
 
-app.use(express.static(path.join(__dirname, "Excercise-2/Client/todo/dist")));
+// app.use(express.static(path.join(__dirname, "Excercise-2/Client/todo/dist")));
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "Excercise-2", "Client", "todo", "dist", "index.html"));
-})
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "Excercise-2", "Client", "todo", "dist", "index.html"));
+// })
 
 app.listen(3000, async()=>{
     try{
