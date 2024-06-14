@@ -16,7 +16,7 @@ const Home = () => {
        const {title, description} = todoData
     
         e.preventDefault();
-        const res = await fetch("/api/todo/createtodo",{
+        const res = await fetch("https://todo-mernapp-1-nltz.onrender.com/todo/createtodo",{
           method: "POST",
           headers: {
             "Content-Type": "application/json"

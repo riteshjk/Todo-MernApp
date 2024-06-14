@@ -13,7 +13,7 @@ const TodoCard = ({ todos, getAllTodos }) => {
 
     const handleDelete = async (id) => {
         try {
-            const res = await fetch(`/api/todo/deleteTodo/${id}`, {
+            const res = await fetch(`https://todo-mernapp-1-nltz.onrender.com/todo/deleteTodo/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"

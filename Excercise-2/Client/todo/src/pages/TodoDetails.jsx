@@ -15,7 +15,7 @@ const TodoDetails = () => {
     useEffect(() => {
         const fetchTodoById = async () => {
             try {
-                const response = await fetch(`/api/todo/gettodo/${id}`);
+                const response = await fetch(`https://todo-mernapp-1-nltz.onrender.com/todo/gettodo/${id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch todo');
                 }
@@ -33,7 +33,7 @@ const TodoDetails = () => {
 
     const hanldeComplete = async (id) => {
         try {
-            const res = await fetch(`/api/todo/deleteTodo/${id}`, {
+            const res = await fetch(`https://todo-mernapp-1-nltz.onrender.com/todo/deleteTodo/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"

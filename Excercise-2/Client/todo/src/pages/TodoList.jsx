@@ -10,7 +10,7 @@ const TodoList = () => {
     },[])
 
     const getAllTodos = async() =>{
-        const res = await fetch("/api/todo/gettodo",{
+        const res = await fetch("https://todo-mernapp-1-nltz.onrender.com/todo/gettodo",{
           method: "GET",
           headers: {
             "Content-Type": "application/json"
