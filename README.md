@@ -89,7 +89,7 @@ To run this application locally, follow these steps:
 
 # I have provided all the API endpoint for your reference
 
-   #  My backend server running on this port  - https://localhost/3000
+   #  My backend server running on this port  - https://todo-mernapp-1-nltz.onrender.com
 
    1. For posting the Data -  /todo/addtodo
 
@@ -115,6 +115,6 @@ To run this application locally, follow these steps:
 
 # Here is the Deployment Link of my application 
 
- https://todo-mernapp-a4g7.onrender.com
+ https://todo-mern-app-mu.vercel.app/ 
   
 
