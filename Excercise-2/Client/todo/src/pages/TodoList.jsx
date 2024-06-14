@@ -10,7 +10,7 @@ const TodoList = () => {
     },[])
 
     const getAllTodos = async() =>{
-        const res = await fetch("http://localhost:3000/todo/gettodo",{
+        const res = await fetch("/api/todo/gettodo",{
           method: "GET",
           headers: {
             "Content-Type": "application/json"

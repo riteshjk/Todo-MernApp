@@ -13,7 +13,7 @@ const TodoCard = ({ todos, getAllTodos }) => {
 
     const handleDelete = async (id) => {
         try {
-            const res = await fetch(`http://localhost:3000/todo/deleteTodo/${id}`, {
+            const res = await fetch(`/api/todo/deleteTodo/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -42,7 +42,7 @@ const TodoCard = ({ todos, getAllTodos }) => {
        
       
  
-                const res = await fetch(`http://localhost:3000/todo/createTodo`, {
+                const res = await fetch(`/api/todo/createTodo`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -63,7 +63,7 @@ const TodoCard = ({ todos, getAllTodos }) => {
         try {
             if (todos._id) {
                 const response = await axios.patch(
-                    `http://localhost:3000/todo/updateTodo/${todos._id}`,
+                    `/api/todo/updateTodo/${todos._id}`,
                     updatedTodo
                 );
                 getAllTodos();

@@ -16,7 +16,7 @@ const Home = () => {
        const {title, description} = todoData
     
         e.preventDefault();
-        const res = await fetch("http://localhost:3000/todo/createtodo",{
+        const res = await fetch("/api/todo/createtodo",{
           method: "POST",
           headers: {
             "Content-Type": "application/json"
