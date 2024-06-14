@@ -33,4 +33,9 @@ app.listen(3000, async()=>{
    
 })
 
-module.exports = app
+app.get("/",(req,res)=>{
+    console.log("server is running on port 3000");
+    res.send("server is running on port 3000");
+})
+
+export default app
